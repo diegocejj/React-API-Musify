@@ -45,13 +45,13 @@ function ProductsInDb(){
         <div className="col-lg-6 mb-4">
             <div className="card shadow mb-4">
                 <div className="card-header py-3">
-                    <h5 className="m-0 font-weight-bold text-gray-800">All products in Data Base</h5>
+                    <h5 className="m-0 font-weight-bold text-gray-800">Last product uploaded</h5>
                 </div> 
                 <div className="card-body">
                 
-                    <button type="button" class="button-down">
+                    {/* <button type="button" class="button-down">
                         <i class="fas fa-caret-down"></i>
-                    </button>
+                    </button> */}
                   
                     <div className="text-center">
                         <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{width: 40 +'rem'}} src={imagenProduct1} alt=" Star Wars - Mandalorian "/>

@@ -8,7 +8,7 @@ import SmallCard from './SmallCard';
 let moviesInDB = {
     title: 'Total Products',
     color: 'primary', 
-    cuantity: 21,
+    cuantity: 15,
     icon: 'fa-clipboard-list'
 }
 
@@ -17,7 +17,7 @@ let moviesInDB = {
 let totalAwards = {
     title:' Total category', 
     color:'success', 
-    cuantity: '79',
+    cuantity: '16',
     icon:'fa-award'
 }
 
@@ -26,14 +26,14 @@ let totalAwards = {
 let actorsQuantity = {
     title:'Total Producers' ,
     color:'warning',
-    cuantity:'49',
+    cuantity:'6',
     icon:'fa-user-check'
 }
  
 
 let cartProps = [moviesInDB, totalAwards, actorsQuantity];
 
-function ContentRowMovies(){
+function ContentRowProducts(){
     return (
     
         <div className="row">
@@ -48,4 +48,4 @@ function ContentRowMovies(){
     )
 }
 
-export default ContentRowMovies;
+export default ContentRowProducts;

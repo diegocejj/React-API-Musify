@@ -5,7 +5,7 @@ import ProductsInDb from '../components/ProductsInDb'
 
 function SearchProducts(){
 
-	const movies = [
+	const products = [
 		{
 			"Title": "Parchís",
 			"Year": "1983",
@@ -18,7 +18,7 @@ function SearchProducts(){
 		},
 	];
 
-	const keyword = 'Disc Demo';
+	const keyword = '';
 
 	// Credenciales de API
 	const apiKey = 'X'; // Intenta poner cualquier cosa antes para probar
@@ -71,7 +71,7 @@ function SearchProducts(){
 							<ProductsInDb/>
 							} 
 					</div>
-					{ movies.length === 0 && <div className="alert alert-warning text-center">No se encontraron películas</div>}
+					{ products.length === 0 && <div className="alert alert-warning text-center">No se encontraron películas</div>}
 				</>
 				:
 				<div className="alert alert-danger text-center my-4 fs-2">Eyyyy... ¿PUSISTE TU APIKEY?</div>

@@ -4,11 +4,13 @@ import image from '../assets/images/allLogoMusify.png';
 import ContentWrapper from './ContentWrapper';
 import GenresInDb from './GenresInDb';
 import ProductsInDb from './ProductsInDb';
-import ContentRowMovies from './ContentRowMovies';
+import ContentRowProducts from './ContentRowProducts';
 import NotFound from './NotFound';
 import SearchProducts from './SearchProducts';
 import Users from './Users'
+import GenresList from './GenresListinDb';
 import {Link, Route, Switch} from 'react-router-dom';
+import Statistics from './Statistics';
 
 function SideBar(){
     return(
@@ -40,7 +42,7 @@ function SideBar(){
 
                 {/*<!-- Nav Item - Pages -->*/}
                 <li className="nav-item">
-                <Link className="nav-link" to="/GenresInDb">
+                <Link className="nav-link" to="/GenresList">
                         <i className="fas fa-fw fa-folder"></i>
                         <span>Category</span>
                     </Link>
@@ -65,6 +67,14 @@ function SideBar(){
                 <Link className="nav-link" to="/Search">
                         <i className="fas fa-fw fa-folder"></i>
                         <span>Search</span>
+                    </Link>
+                </li>
+
+                {/*<!-- Nav Item - Pages -->*/}
+                <li className="nav-item">
+                <Link className="nav-link" to="/Statistics">
+                        <i className="fas fa-fw fa-folder"></i>
+                        <span>Statistics (soon)</span>
                     </Link>
                 </li>
 
@@ -99,8 +109,8 @@ function SideBar(){
             <Route path="/ProductsInDb">
                 <ProductsInDb />
             </Route>
-            <Route path="/ContentRowMovies">
-                <ContentRowMovies />
+            <Route path="/ContentRowProducts">
+                <ContentRowProducts />
             </Route>*/}
             {/*<!-- End Microdesafio 1 -->*/}
 
@@ -115,14 +125,20 @@ function SideBar(){
                 <Route path="/ProductsInDb">
                     <ProductsInDb />
                 </Route>
-                <Route path="/ContentRowMovies">
-                    <ContentRowMovies />
+                <Route path="/ContentRowProducts">
+                    <ContentRowProducts />
                 </Route>
                 <Route path="/Search">
                     <SearchProducts />
                 </Route>
                 <Route path="/Users">
                     <Users />
+                </Route>
+                <Route path="/GenresList">
+                    <GenresList/>
+                </Route>
+                <Route path="/Statistics">
+                    <Statistics/>
                 </Route>
                 <Route component={NotFound} />
             </Switch>

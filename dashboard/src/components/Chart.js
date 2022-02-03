@@ -23,8 +23,8 @@ let tableRowsData = [
 function Chart (){
     return (
         /* <!-- DataTales Example --> */
-        <div className="card shadow mb-4">
-            <div className="card-body">
+        <div className="card shadow mb-4 chart-box">
+            <div className="card-body chart-subbox">
                 <div className="table-responsive">
                     <table className="table table-bordered" id="dataTable" width="100%" cellSpacing="0">
                         <thead>

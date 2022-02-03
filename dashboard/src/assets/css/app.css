@@ -521,12 +521,21 @@ pre code {
 .img-user{
     height: 7rem;
     width: 10rem;
+    border-radius: 100%;
     /* 40 + 'rem'; */
 }
 
 .btn-search{
     background: #e74a3b!important;
     border: solid 1px #e74a3b!important;
+}
+
+.chart-box{
+  width: 100%;
+}
+
+.chart-subbox{
+
 }
 
 
