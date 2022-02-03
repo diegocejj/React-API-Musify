@@ -136,10 +136,7 @@ function SideBar(){
                 </Route>
                 <Route path="/GenresList">
                     <GenresList/>
-                </Route>
-                <Route path="/Statistics">
-                    <Statistics/>
-                </Route>
+                </Route> 
                 <Route component={NotFound} />
             </Switch>
             {/*<!-- End Microdesafio 2 -->*/}

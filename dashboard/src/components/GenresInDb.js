@@ -3,26 +3,26 @@ import { useState, useEffect } from "react";
 
 function GenresInDb() {
 
-    // const [genres, setGenres] = useState([]);
+    const [genres, setGenres] = useState([]);
   
-    // useEffect(() =>{
-    //   console.log("%cthe component is assembled","color:green");
-    //   fetch("http://api.music-story.com/en/genre/1")
-    //     .then(response => response.json())
-    //     .then(data => {
-    //       console.log(data);
-    //       setGenres(data.name)
-    //     })
-    //     .catch(error => console.error(error));
-    // },[])
+    useEffect(() =>{
+      console.log("%cthe component is assembled","color:green");
+      fetch("http://localhost:42133/products/api")
+        .then(response => response.json())
+        .then(data => {
+          console.log(data.countByCategory);
+          // setGenres(data.name)
+        })
+        .catch(error => console.error(error));
+    },[])
 
-    // useEffect(() => {
-    //   console.log("%cUpdate component","color : yellow");
-    // },[genres]);
+    useEffect(() => {
+      console.log("%cUpdate component","color : yellow");
+    },[genres]);
 
-    // useEffect(() => {
-    //   return () => console.log("%cDismount component", "color : red");
-    // },[]);
+    useEffect(() => {
+      return () => console.log("%cDismount component", "color : red");
+    },[]);
 
     return (
     <div className="col-lg-6 mb-4">

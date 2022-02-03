@@ -17,6 +17,8 @@ import imagenProduct13 from '../assets/images/allproducts/article71.jpg';
 import imagenProduct14 from '../assets/images/allproducts/article72.jpg';
 import imagenProduct15 from '../assets/images/allproducts/article73.jpg';
 
+import { useState, useEffect } from 'react-router-dom'
+
 function ProductsInDb(){
 
     // const [products, setProducts] = useState([]);
@@ -45,7 +47,7 @@ function ProductsInDb(){
         <div className="mb-4 card-product-box">
 
             <div className="card-header py-3">
-                <h5 className="m-0 font-weight-bold text-gray-800">All products</h5>
+                -<h5 className="m-0 font-weight-bold text-gray-800">All products</h5>
             </div> 
 
             <div className="card shadow mb-4 card-product-subbox">
