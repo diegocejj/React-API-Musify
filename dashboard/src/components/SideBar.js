@@ -1,11 +1,13 @@
 import React from 'react';
-import image from '../assets/images/img-logo-musify.png';  
+import image from '../assets/images/allLogoMusify.png';
+//img-logo-musify.png';  
 import ContentWrapper from './ContentWrapper';
 import GenresInDb from './GenresInDb';
 import ProductsInDb from './ProductsInDb';
 import ContentRowMovies from './ContentRowMovies';
 import NotFound from './NotFound';
 import SearchProducts from './SearchProducts';
+import Users from './Users'
 import {Link, Route, Switch} from 'react-router-dom';
 
 function SideBar(){
@@ -53,7 +55,7 @@ function SideBar(){
 
                 {/*<!-- Nav Item - Tables -->*/}
                 <li className="nav-item nav-link">
-                <Link className="nav-link" to="/ContentRowMovies">
+                <Link className="nav-link" to="/Users">
                         <i className="fas fa-fw fa-table"></i>
                         <span>Users</span></Link>
                 </li>
@@ -68,17 +70,17 @@ function SideBar(){
 
                 {/*<!-- Nav Item - Pages -->*/}
                 <li className="nav-item">
-                <Link className="nav-link" to="/GenresInDb">
+                <Link className="nav-link" to="/Favorite">
                         <i className="fas fa-fw fa-folder"></i>
-                        <span>Favorite</span>
+                        <span>Favorite (soon)</span>
                     </Link>
                 </li>
 
                 {/*<!-- Nav Item - Pages -->*/}
                 <li className="nav-item">
-                <Link className="nav-link" to="/GenresInDb">
+                <Link className="nav-link" to="/Premium">
                         <i className="fas fa-fw fa-folder"></i>
-                        <span>Premium</span>
+                        <span>Premium (soon)</span>
                     </Link>
                 </li>
                  
@@ -118,6 +120,9 @@ function SideBar(){
                 </Route>
                 <Route path="/Search">
                     <SearchProducts />
+                </Route>
+                <Route path="/Users">
+                    <Users />
                 </Route>
                 <Route component={NotFound} />
             </Switch>
